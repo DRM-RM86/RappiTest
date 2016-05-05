@@ -13,6 +13,6 @@
     <string name="title.info">Información</string>
 
     <string name="error.msg.nodata">No fue posible recuperar los datos</string>
-    <string name="error.connection">No cuenta con conexión a Red, asegurate de estar conectado a internet.</string>
+    <string name="error.connection">No cuenta con conexión a Red, asegurate de estar conectado a internet.\nLa aplicación entrara en modo offline</string>
 
 </resources>

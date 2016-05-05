@@ -6,6 +6,7 @@ import com.apps.davidrm.rappitest.R;
 import com.apps.davidrm.rappitest.entities.EntityFeed;
 import com.apps.davidrm.rappitest.interactor.home.HomeInteractor;
 import com.apps.davidrm.rappitest.interactor.home.HomeInteractorImp;
+import com.apps.davidrm.rappitest.models.databases.RappiDBHelper;
 import com.apps.davidrm.rappitest.utils.Device;
 import com.apps.davidrm.rappitest.viewInterface.HomeView;
 
@@ -30,6 +31,8 @@ public class HomePresenterImp implements HomePresenter, OnHomeFinishedListener {
             homeInteractor.GetItems(context,numItems,this);
         }else{
             homeView.OnError(context.getResources().getString(R.string.error_connection));
+            homeView.OnSuccess(RappiDBHelper.getInstance(context).getFeeds());
+
         }
 
     }

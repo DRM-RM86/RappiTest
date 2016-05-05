@@ -57,7 +57,7 @@ public class MainActivity extends BaseUIActivity implements HomeView{
         mDrawerToggle.syncState();
         getSupportFragmentManager().beginTransaction().replace(R.id.menu_container, MenuLateralFragment.getInstance() ).commit();
         presenter=new HomePresenterImp(this);
-        presenter.ValidateGetItems(this,30);
+        presenter.ValidateGetItems(this,20);
 
     }
 
@@ -135,15 +135,13 @@ public class MainActivity extends BaseUIActivity implements HomeView{
 
     @Override
     public void OnError(String error) {
-        Utilities.createAlert(this,error);
+        Utilities.createAlert(this,this.getResources().getString(R.string.app_name),error);
     }
 
     @Override
-    public void OnSuccess(EntityFeed entityFeed1) {
-        EntityFeed entityFeed=RappiDBHelper.getInstance(this).getFeeds();
-
+    public void OnSuccess(EntityFeed entityFeed) {
             getSupportFragmentManager().beginTransaction().remove(FragmentCategory.getInstance(entityFeed)).commit();
             getSupportFragmentManager().beginTransaction().replace(R.id.section_container, FragmentCategory.getInstance(entityFeed)).commit();
-            setTitleToolbar(entityFeed.getAuthor());
+
     }
 }

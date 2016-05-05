@@ -101,8 +101,7 @@ public class FragmentCategory extends BaseUIFragment {
                 tabLayout.setupWithViewPager(viewPager_tab);
             }
         });
-
-
+        getActivity().setTitle(feeds.getAuthor());
     }
 
     @Nullable
