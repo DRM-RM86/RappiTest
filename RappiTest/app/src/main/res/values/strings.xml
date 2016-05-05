@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">RappiTest</string>
+    <string name="navigation_drawer_open">Abrir</string>
+    <string name="navigation_drawer_close">Cerrar</string>
+
+
+    <string name="info.title.games">Juegos</string>
+    <string name="info.title.entertaiment">Entretenimiento</string>
+    <string name="info.title.social">Social Networking</string>
+    <string name="msg.info">"Esta aplicación es una prueba para mostrar habilidades en el desarrollo de aplicaciones con Android. \nEn esta aplicación se implementó de forma sencilla el modelo MVP. \nCon el proposito de hacer un poco mas complejo el flujo de datos no se utilizo  ninguna libreria para conexion a datos.</string>
+
+    <string name="title.init">Inicio</string>
+    <string name="title.info">Información</string>
+
+    <string name="error.msg.nodata">No fue posible recuperar los datos</string>
+    <string name="error.connection">No cuenta con conexión a Red, asegurate de estar conectado a internet.</string>
+
+</resources>

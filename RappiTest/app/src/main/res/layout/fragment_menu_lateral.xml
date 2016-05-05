@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/colorPrimary"
+
+        >
+
+        <ImageView
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:src="@mipmap/cuenta"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="8sp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="8sp">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="david.rm860@gmail.com"
+                android:textAppearance="@android:style/TextAppearance.Small"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="David Romero Muñoz"
+            android:id="@+id/textView"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="@android:color/white"
+            android:layout_margin="8sp"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list_view_menu"
+        android:layout_width="match_parent"
+        android:dividerHeight="0.5dp"
+        android:groupIndicator="@null"
+        android:layout_height="match_parent"
+        android:divider="@android:color/darker_gray"/>
+
+    <!--
+    android:listSelector="@drawable/menu_item_selector"
+    android:divider="@color/android_gray"
+    -->
+
+</LinearLayout>

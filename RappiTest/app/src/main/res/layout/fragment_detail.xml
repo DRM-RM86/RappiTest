@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <com.nirhart.parallaxscroll.views.ParallaxScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:inner_parallax_factor="1.9"
+        app:parallax_factor="1.9"
+        app:parallax_views_num="5">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FFE0B2">
+
+                <ImageView
+                    android:layout_width="200sp"
+                    android:layout_height="200sp"
+                    android:id="@+id/image_item"
+                    android:layout_gravity="center_horizontal"
+                    android:scaleType="fitStart"
+                    android:adjustViewBounds="true"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/content_app_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/card_background_white">
+
+                <ImageView
+                    android:id="@+id/img_detail"
+                    android:layout_width="100sp"
+                    android:layout_height="100sp"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+
+                    />
+
+                <LinearLayout
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tx_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textAppearance="@android:style/TextAppearance.Large"/>
+                    <TextView
+                        android:id="@+id/tx_rigth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@android:style/TextAppearance.Medium"/>
+
+                    <TextView
+                        android:id="@+id/tx_category"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|bottom"
+                        android:gravity="right|bottom"
+                        android:layout_marginTop="25sp"
+                        android:textAppearance="@android:style/TextAppearance.Medium"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/content_summary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/card_background_white"
+                android:layout_margin="@dimen/activity_horizontal_margin">
+
+                <TextView
+                    android:id="@+id/tx_summary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_margin"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </com.nirhart.parallaxscroll.views.ParallaxScrollView>
+
+
+</LinearLayout>
+
+
